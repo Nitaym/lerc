@@ -1,8 +1,11 @@
 cmake_minimum_required(VERSION 3.10)
 
 # Set compiler to gcc
-set(CMAKE_C_COMPILER "gcc-9")
-set(CMAKE_CXX_COMPILER "g++-9")
+# set(CMAKE_C_COMPILER "gcc-9")
+# set(CMAKE_CXX_COMPILER "g++-9")
+
+SET(CMAKE_CXX_FLAGS  "-g -Wall -Wno-unused-function -std=c++17 -Wno-deprecated-declarations" CACHE INTERNAL "" FORCE)
+SET(CMAKE_C_FLAGS  "-g -Wall -Wno-unused-function -Wno-deprecated-declarations" CACHE INTERNAL "" FORCE)
 
 project(lercLib C CXX)
 
